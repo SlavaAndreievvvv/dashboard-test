@@ -1,0 +1,11 @@
+@use "utils" as u;
+
+.menu {
+  display: none;
+  @media (min-width: 1366px) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+}

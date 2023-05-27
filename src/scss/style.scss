@@ -1,6 +1,17 @@
-@use "normalize.css";
+@use "./config/normalize";
 @use "./config/reset";
 @use "./config/common";
 
 //Components
+@use "./components/input";
+@use "./components/avatar";
 @use "./components/title";
+@use "./components/logo";
+@use "./components/item";
+@use "./components/menu";
+@use "./components/table";
+@use "./components/aside";
+@use "./components/main";
+
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");

@@ -1,0 +1,81 @@
+@use "utils" as u;
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+
+  &__text {
+    @include u.text(u.rem(14px), 500, u.$color-grey, 21px);
+    flex-grow: 1;
+  }
+
+  &__arrow {
+    width: 6px;
+    height: 10px;
+    fill: none;
+    stroke: u.$color-grey;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+  &__icon > .dashboard {
+    fill: u.$color-white;
+    stroke: u.$color-grey;
+  }
+  &__icon > .product {
+    fill: u.$color-grey;
+    stroke: none;
+  }
+  &__icon > .customer {
+    fill: none;
+    stroke: u.$color-grey;
+  }
+  &__icon > .income {
+    fill: none;
+    stroke: u.$color-grey;
+  }
+  &__icon > .promote {
+    fill: u.$color-grey;
+  }
+  &__icon > .help {
+    fill: u.$color-grey;
+  }
+}
+
+.menu__item.activeItem {
+  background-color: u.$color-blue;
+}
+.menu__item.activeItem > .item__text {
+  background-color: u.$color-blue;
+  color: u.$color-white;
+}
+.menu__item.activeItem > .item__arrow {
+  stroke: u.$color-white;
+}
+.menu__item.activeItem > .item__icon > .dashboard {
+  fill: u.$color-blue;
+  stroke: u.$color-white;
+}
+.menu__item.activeItem > .item__icon > .product {
+  fill: u.$color-white;
+}
+.menu__item.activeItem > .item__icon > .customer {
+  fill: u.$color-blue;
+  stroke: u.$color-white;
+}
+.menu__item.activeItem > .item__icon > .income {
+  stroke: u.$color-white;
+}
+.menu__item.activeItem > .item__icon > .promote {
+  fill: u.$color-white;
+}
+.menu__item.activeItem > .item__icon > .help {
+  fill: u.$color-white;
+}

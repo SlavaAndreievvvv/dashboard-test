@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Europe/Kiev
+X-LIC-LOCATION:Europe/Kiev
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:19700424T000000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1FR
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:19701029T235959
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1TH
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Kiev:20230524T110000
+DTEND;TZID=Europe/Kiev:20230524T114500
+DTSTAMP:20230522T135612Z
+ORGANIZER;CN=k.zaiats@merge.rocks:mailto:k.zaiats@merge.rocks
+UID:2l5qfj7t69dj4f75i83a0k477c@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=k.zaiats@merge.rocks;X-NUM-GUESTS=0:mailto:k.zaiats@merge.rocks
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=andreiev.viacheslav@gmail.com;X-NUM-GUESTS=0:mailto:andreiev.viache
+ slav@gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-1315244510
+CREATED:20230522T135610Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nПрисоединиться Zoom Meeting\nhttps://us04web.zoom
+ .us/j/71234237364?pwd=UjSv1ewc3HOGCyvkjbXDP3oqnWDira.1 (Идентификатор: 7123
+ 4237364\, код доступа: 690qLp)\n\nКак присоединиться: https://www.google.co
+ m/url?q=https://applications.zoom.us/addon/invitation/detail?meetingUuid%3D
+ C8Pu1UxCTSuGRTWmojoiIg%253D%253D%26signature%3D3d3501c235852b3ab3fd6866d8da
+ 21fdb7a62e06ec4b2be7e77328ab16f6dd57%26v%3D1&sa=D&source=calendar&usg=AOvVa
+ w2CDOqlPdQpFjbSZm0rIGlH\n\n------------<br /><a href="https://www.google.co
+ m/url?q=https://support.zoom.us/hc/en-us/articles/360020187492-Zoom-for-GSu
+ ite-add-on-Troubleshooting%23h_01FRGZTWJYRGRDMPQW4N041QF7&amp\;sa=D&amp\;so
+ urce=calendar&amp\;usg=AOvVaw3pOlmJKYg-DG37_G4Qn9Q2" target="_blank">Zoom f
+ or G Suite Add-On Help</a><br />------------<br /><br />Meeting host: <a hr
+ ef="mailto:kszayats@gmail.com" target="_blank">kszayats@gmail.com</a><br />
+ <br />Join Zoom Meeting: <br /><a href="https://www.google.com/url?q=https:
+ //us04web.zoom.us/j/71234237364?pwd%3DUjSv1ewc3HOGCyvkjbXDP3oqnWDira.1&amp\
+ ;sa=D&amp\;source=calendar&amp\;usg=AOvVaw06eBqkZ2bJCbJVdu4NiSaS" target="_
+ blank">https://us04web.zoom.us/j/71234237364?pwd=UjSv1ewc3HOGCyvkjbXDP3oqnW
+ Dira.1</a>\n\nНе изменяйте данные в этом разделе.\n-::~:~::~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230522T135610Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Junior Frontend Developer Interview: Slava Andreiev
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

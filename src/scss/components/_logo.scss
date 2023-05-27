@@ -1,0 +1,25 @@
+@use "utils" as u;
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &__text {
+    @include u.text(u.rem(26px), 600, u.$color-black, 39px);
+    letter-spacing: 0.01em;
+  }
+
+  &__img {
+    margin-right: 6px;
+  }
+
+  &__v {
+    @include u.text(u.rem(10px), 500, u.$color-grey-3, 15px);
+    letter-spacing: -0.01em;
+    position: absolute;
+    top: 18px;
+    left: 200px;
+  }
+}

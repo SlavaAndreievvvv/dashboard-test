@@ -1,0 +1,28 @@
+@use "utils" as u;
+
+.avatar {
+  display: none;
+  align-items: end;
+  &__icon {
+    margin-right: 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include u.text(u.rem(14px), 500, u.$color-black, 21px);
+    letter-spacing: 0.01em;
+  }
+
+  &__position {
+    @include u.text(u.rem(12px), 400, u.$color-grey-4, 18px);
+    letter-spacing: 0.01em;
+  }
+  @media (min-width: 1366px) {
+    display: flex;
+    flex-grow: 1;
+  }
+}

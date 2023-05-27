@@ -1,1 +1,5 @@
-@use "utils";
+@use "utils" as u;
+
+.title {
+  @include u.text(u.rem(24px), 500, u.$color-black, 36px);
+}

@@ -1,0 +1,121 @@
+@use "utils" as u;
+
+.table {
+  max-width: 968px;
+  width: 100%;
+  background-color: u.$color-white;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 38px;
+    padding-right: 53px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__caption {
+    @include u.text(u.rem(22px), 600, u.$color-black, 33px);
+    letter-spacing: -0.01em;
+    margin-bottom: 7px;
+  }
+  &__members {
+    @include u.text(u.rem(14px), 400, u.$color-green, 21px);
+    letter-spacing: -0.01em;
+  }
+  &__body {
+    overflow: auto;
+    max-width: 968px;
+    width: 100%;
+    max-height: 60vh;
+    height: 100%;
+  }
+  &__content {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+
+    & > thead > tr > th:nth-child(1) {
+      padding-left: 38px;
+    }
+    & > thead > tr > th:nth-child(6) {
+      padding-right: 44px;
+      text-align: center;
+    }
+    & > tbody > tr > td:nth-child(1) {
+      padding-left: 38px;
+    }
+    & > tbody > tr > td:nth-child(6) {
+      padding-right: 44px;
+      text-align: center;
+    }
+    & > thead th {
+      @include u.text(u.rem(14px), 500, u.$color-grey-2, 21px);
+      white-space: nowrap;
+      text-align: left;
+      padding: 24px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: u.$color-white;
+      z-index: 100;
+    }
+    & > tbody > tr > td {
+      @include u.text(u.rem(14px), 500, u.$color-black-2, 21px);
+      white-space: nowrap;
+      padding: 24px;
+    }
+    & > tbody > tr > td > span {
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 32px;
+      border-radius: 4px;
+    }
+    & > thead {
+      position: relative;
+
+      ::after {
+        content: "";
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: u.$color-white-3;
+      }
+    }
+    & > tbody > tr {
+      position: relative;
+      ::after {
+        content: "";
+        position: absolute;
+        top: 66px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%;
+        height: 1px;
+        background-color: u.$color-white-3;
+      }
+    }
+  }
+}
+
+.active {
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid u.$color-green-2;
+  color: u.$color-green-4;
+}
+.inactive {
+  background: #ffc5c5;
+  border: 1px solid #df0404;
+  color: #df0404;
+}
